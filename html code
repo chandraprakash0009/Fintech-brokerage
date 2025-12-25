@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FinTrade - Fintech Brokerage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>FinTrade</h1>
+    <p>Your Smart Fintech Brokerage Platform</p>
+</header>
+
+<section class="balance">
+    <h2>Account Balance: ₹<span id="balance">100000</span></h2>
+</section>
+
+<section class="stocks">
+    <h2>Available Stocks</h2>
+
+    <table>
+        <tr>
+            <th>Stock</th>
+            <th>Price (₹)</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>TCS</td>
+            <td>3500</td>
+            <td>
+                <button onclick="buyStock('TCS', 3500)">Buy</button>
+                <button onclick="sellStock('TCS', 3500)">Sell</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Infosys</td>
+            <td>1500</td>
+            <td>
+                <button onclick="buyStock('Infosys', 1500)">Buy</button>
+                <button onclick="sellStock('Infosys', 1500)">Sell</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Reliance</td>
+            <td>2500</td>
+            <td>
+                <button onclick="buyStock('Reliance', 2500)">Buy</button>
+                <button onclick="sellStock('Reliance', 2500)">Sell</button>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<section class="portfolio">
+    <h2>Your Portfolio</h2>
+    <ul id="portfolioList"></ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
